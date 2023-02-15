@@ -1,7 +1,7 @@
 const cart = {
 	now() {},
 };
-
+//кнопки меню и корзины//
 const cartButton = document.querySelector('.icon__cart');
 const cartAll = document.querySelector('.cart');
 
@@ -25,7 +25,7 @@ function hideItem() {
 	}
 }
 hideItem();
-
+//подсчет сумм//
 const ItemCartDel = document.querySelectorAll('.card__item-delete');
 let costSubtotal = document.querySelector('.cost__value__subtotal');
 let costSTotal = document.querySelector('.cost__value__total');
@@ -54,6 +54,7 @@ function count() {
 }
 
 count();
+//кнопки плюсминус//
 function plusItem() {
 	plus.forEach(btn => {
 		btn.addEventListener('click', e => {
@@ -75,7 +76,7 @@ function minusItem() {
 }
 minusItem();
 plusItem();
-
+//кнопки удаления//
 function deliteItemCart() {
 	ItemCartDel.forEach(btn => {
 		btn.addEventListener('click', e => {
