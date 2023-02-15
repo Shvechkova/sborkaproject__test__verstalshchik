@@ -1,111 +1,91 @@
 <div class="billing">
-	<h3 class="billing__title">Billing Information</h3>
-	<div class="billing__pay-selection">
-		<label class="pay checkbox">
-			<input class="pay__select checkbox__select" type="radio" name="radio" checked />
-			<span class="pay__check checkbox__check"></span>
-			<span class="pay__text checkbox__text"> Pay with Credit Card</span>
-		</label>
-		<label class="pay checkbox">
-			<input class="pay__select checkbox__select" type="radio" name="radio" />
-			<span class="pay__check checkbox__check"></span>
-			<span class="pay__img"><img src="../../assets/images/PayPal.png" alt="" /></span>
-		</label>
-	</div>
+    <h3 class="billing__title">Billing Information</h3>
+    <div class="billing__pay-selection">
+        <label class="pay checkbox">
+            <input class="pay__select checkbox__select" type="radio" name="radio" checked />
+            <span class="pay__check checkbox__check"></span>
+            <span class="pay__text checkbox__text"> Pay with Credit Card</span>
+        </label>
+        <label class="pay checkbox">
+            <input class="pay__select checkbox__select" type="radio" name="radio" />
+            <span class="pay__check checkbox__check"></span>
+            <span class="pay__img"><img src="../../assets/images/PayPal.png" alt="" /></span>
+        </label>
+    </div>
 
-	<div class="paycard">
-		<form class="paycardform" action="" name="paycard" id="payment" autocomplete="off">
-			<div class="paycard__name">
-				<label class="paycard__name-items">
-					<span class="paycard__text">Name on card</span>
-					<input class="paycard__name-imput inputs" type="text" placeholder="Placeholder Text" />
-				</label>
-			</div>
-			<div class="paycard__number">
-				<label class="paycard__number-items" for="cardpay">
-					<span class="paycard__text">Card number</span>
-					<div class="paycard__number-items--nums">
-						<input
-							class="paycard__number-items--num inputs"
-							type="number"
-							name="cardpay"
-						/>
+    <div class="paycard">
+        <form class="paycardform" action="" name="paycard" id="payment" autocomplete="off">
+            <div class="paycard__name">
+                <label class="paycard__name-items">
+                    <span class="paycard__text">Name on card</span>
+                    <input class="paycard__name-imput inputs" type="text" placeholder="Placeholder Text" />
+                </label>
+            </div>
+            <div class="paycard__number">
 
-						<input
-							class="paycard__number-items--num inputs"
-							type="number"
-							name="cardpay"
-						/>
+  <fieldset class="paycard__number-items">
+      <label class=" paycard__text" for="card-number">Card Number</label>
+      <div class="paycard__number-items--nums">
+      <input type="num" id="card-number" class="input-cart-number paycard__number-items--num inputs" maxlength="4" />
+      <input type="num" id="card-number-1" class="input-cart-number paycard__number-items--num inputs" maxlength="4" />
+      <input type="num" id="card-number-2" class="input-cart-number paycard__number-items--num inputs" maxlength="4" />
+      <input type="num" id="card-number-3" class="input-cart-number paycard__number-items--num inputs" maxlength="4" />
+   </div> </fieldset>
 
-						<input
-							class="paycard__number-items--num inputs"
-							type="number"
-							name="cardpay"
-						/>
+            </div>
+            <div class="paycard__info">
+                <div class="paycard__info-date">
+                    <label class="paycard__info-date--items">
+                        <span class="paycard__text">Expire date </span>
+                        <input class="paycard__info-date__imput inputs" type="text"/>
+                    </label>
+                </div>
+                <div class="paycard__info-CVV">
+                    <label class="paycard__info-date--items">
+                        <span class="paycard__text paycard__text--cvv">CVV code
+                            <p>?</p>
+                        </span>
 
-						<input
-							class="paycard__number-items--num inputs"
-							type="number"
-							name="cardpay"
-						/>
-					</div>
-				</label>
-			</div>
-			<div class="paycard__info">
-				<div class="paycard__info-date">
-					<label class="paycard__info-date--items">
-						<span class="paycard__text">Expire date </span>
-						<input class="paycard__info-date__imput inputs" type="number" />
-					</label>
-				</div>
-				<div class="paycard__info-CVV">
-					<label class="paycard__info-date--items">
-						<span class="paycard__text paycard__text--cvv"
-							>CVV code
-							<p>?</p>
-						</span>
+                        <input class="paycard__info-date__imput inputs" type="password" />
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
 
-						<input class="paycard__info-date__imput inputs" type="password" />
-					</label>
-				</div>
-			</div>
-		</form>
-	</div>
+    <div class="agree">
+        <label class="checkbox agree__checkbox">
+            <input form="payment" class="checkbox__select agree__select" type="checkbox" checked />
+            <span class="checkbox__check agree__check"></span>
+            <span class="checkbox__text agree__text"> Save information of this credit card</span>
+        </label>
+        <label class="checkbox agree__checkbox">
+            <input form="payment" class="checkbox__select agree__select" type="checkbox" />
+            <span class="checkbox__check agree__check"></span>
+            <span class="checkbox__text agree__text">
+                I accept the <a href="#">terms and comditions</a> and the
+                <a href="#"> Privacy Policies</a></span>
+        </label>
+    </div>
+    <div class="buttons__pay">
+        {{
+        a({
+        className: 'button__switch-pay',
+        href: '#',
+        children: 'Back',
+        chevronRight: true
+        })
+        }}
 
-	<div class="agree">
-		<label class="checkbox agree__checkbox">
-			<input form="payment" class="checkbox__select agree__select" type="checkbox" checked />
-			<span class="checkbox__check agree__check"></span>
-			<span class="checkbox__text agree__text"> Save information of this credit card</span>
-		</label>
-		<label class="checkbox agree__checkbox">
-			<input form="payment" class="checkbox__select agree__select" type="checkbox" />
-			<span class="checkbox__check agree__check"></span>
-			<span class="checkbox__text agree__text">
-				I accept the <a href="#">terms and comditions</a> and the
-				<a href="#"> Privacy Policies</a></span
-			>
-		</label>
-	</div>
-	<div class="buttons__pay">
-		{{
-			a({
-				className: 'button__switch-pay',
-				href: '#',
-				children: 'Back',
-				chevronRight: true
-			})
-		}}
-
-		<div class="button__buy">
-			{{
-				button({
-					className: 'button__bu',
-					form: 'payment',
-					children: 'Check Out',
-					chevronRight: true
-				})
-			}}
-		</div>
-	</div>
+        <div class="button__buy">
+            {{
+            button({
+            className: 'button__bu',
+            form: 'payment',
+            children: 'Check Out',
+            chevronRight: true
+            })
+            }}
+        </div>
+    </div>
 </div>

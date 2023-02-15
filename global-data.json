@@ -41,14 +41,14 @@
 			"name": "Amet minim mollit non deserunt ullamco est sit",
 			"price": 525,
 			"quantity": 1,
-			"picture": "../assets/images/product1.png"
+			"picture": "assets/images/product1.png"
 		},
 		{
 			"title": "Item 2",
 			"name": "Amet minim mollit non",
-			"price": 5245,
+			"price": 525,
 			"quantity": 1,
-			"picture": "../assets/images/product2.png"
+			"picture": "assets/images/product2.png"
 		}
 		
 	],
