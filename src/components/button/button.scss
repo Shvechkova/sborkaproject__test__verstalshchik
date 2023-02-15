@@ -1,0 +1,24 @@
+.button {
+	@extend .transition-active;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+border-radius: 3px;
+padding: 8px 30px ; 
+	cursor: pointer;
+	background-color:$blue;
+	color:#fff;
+	border:none;
+	line-height: 24px;
+font-weight: 400;
+transition: .2s;
+
+	&:hover {
+		background-color: #2447b2;
+	
+		
+	}
+
+	
+
+}

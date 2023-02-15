@@ -1,0 +1,188 @@
+.billing {
+	margin: 60px auto 0 auto;
+
+	max-width: 660px;
+}
+.billing__title {
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+.billing__pay-selection {
+	padding-right: 30px;
+	font-size: 14px;
+	line-height: 16.41px;
+
+	display: flex;
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+
+	&__select {
+		display: none;
+		&:checked + .checkbox__check::before {
+			opacity: 1;
+		}
+	}
+
+	&__check {
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		border: 1px solid $gray-outline;
+		border-radius: 50%;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			background-color: $blue;
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+		}
+	}
+
+	&__text {
+		padding-left: 9px;
+	}
+}
+
+.pay {
+	flex-direction: row;
+
+	& + .pay {
+		padding-left: 68px;
+	}
+
+	&__img {
+		padding-left: 14px;
+	}
+}
+
+.paycardform {
+	padding: 20px 30px 40px;
+}
+.paycard {
+	margin-top: 40px;
+	max-width: 550px;
+	height: 298px;
+	margin-left: -30px;
+	border: 1px solid $gray-outline;
+	box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	&__text {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 24px;
+		color: #555770;
+	}
+
+	&__name {
+		&-items {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__number {
+		padding-top: 20px;
+		&-items {
+
+			&--nums {
+				display: flex;
+			}
+			&--num {
+				width: 100px;
+			}
+			&--num + .paycard__number-items--num {
+				margin-left: 30px;
+			}
+		}
+	}
+}
+.inputs {
+	font-size: 14px;
+	line-height: 24px;
+	color: #8e90a6;
+	background: #ededf1;
+	border-radius: 3px;
+	border: none;
+	padding: 8px 10px;
+}
+
+.paycard__info {
+	padding-top: 20px;
+	display: flex;
+
+	&-date {
+		&--items {
+			display: flex;
+			flex-direction: column;
+			padding-right: 30px;
+		}
+		&__imput {
+			width: 100px;
+		}
+	}
+}
+
+.paycard__info-date--items {
+	position: relative;
+}
+.paycard__text--cvv {
+	display: flex;
+	position: relative;
+}
+.paycard__text--cvv {
+	& p {
+		color: #000;
+		padding-left: 9px;
+		&::after {
+			z-index: -100;
+			content: '';
+			position: absolute;
+			display: block;
+			background-color: #dbdbdb;
+			width: 13px;
+			height: 13px;
+			border-radius: 50%;
+			top: 20%;
+			right: 29%;
+		}
+	}
+}
+
+.agree {
+	color: $gray-middle;
+	display: inline-flex;
+	flex-direction: column;
+	font-size: 14px;
+	line-height: 16px;
+	& a {
+		color: #000;
+	}
+
+	margin-top: 41px;
+	&__check {
+		border-radius: 0%;
+		&::before {
+			border-radius: 0;
+		}
+	}
+}
+
+.agree__checkbox + .agree__checkbox {
+	margin-top: 14px;
+}
+
+.buttons__pay {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 41px;
+}

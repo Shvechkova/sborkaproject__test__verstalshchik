@@ -1,0 +1,27 @@
+<div class="track">
+    <div class="trac__item">
+        <div class="trac__item-count trac__item-count--full"><p>1</p></div>
+        <div class="track__item-name track__item-name"><p>Account</p> </div>
+    </div>
+    <div class="track__line track__line--full"> <span></span> </div>
+    <div class="trac__item">
+        <div class="trac__item-count trac__item-count--full"><p>2</p>
+        </div>
+        <div class="track__item-name track__item-name"> <p>Shipping</p> </div>
+    </div>
+    <div class="track__line track__line--full"><span></span></div>
+     <div class="trac__item">
+        <div class="trac__item-count trac__item-count--load"><p>3</p></div>
+        <div class="track__item-name track__item-name">
+            <p>Billing</p> </div>
+    </div>
+    <div class="track__line "><span></span></div>
+    <div class="trac__item">
+        <div class="trac__item-count">
+            <p>4</p></div>
+        <div class="track__item-name">
+           <p>Review</p> </div>
+    </div>
+    
+</div>
+

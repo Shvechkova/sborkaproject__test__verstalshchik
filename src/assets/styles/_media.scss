@@ -1,0 +1,91 @@
+@media (max-width: 1110px) {
+	.content__main {
+		width: 100%;
+		margin: 50px 50px 0 50px;
+	}
+	.paycard__number-items--num + .paycard__number-items--num {
+		margin-left: auto;
+	}
+	.cart__item {
+	}
+	.cart {
+		width: 330px;
+	}
+	.card__item-count--quantity {
+		width: 42px;
+	}
+}
+@media (max-width: 904px) {
+	.cart {
+		width: 280px;
+	}
+	.card__img--pic {
+		width: 70px;
+		height: 70px;
+	}
+
+	.content__main {
+		margin: 50px 20px 0 20px;
+	}
+	.paycardform {
+		// padding: 10px 20px 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cart {
+        
+        background: #fff;
+		
+        position: absolute;
+       
+        z-index: 2000;
+        width: 100%;
+        
+	}
+	
+	.icon__cart{
+
+	}
+    .cart__item {
+        width: 330px;
+       margin: 0 auto;
+    }
+	.content__main {
+		margin: 50px 50px 0 80px;
+	}
+	.track {
+		width: auto;
+	}
+	.paycard {
+		margin-left: -30px;
+	}
+	.menu {
+        
+		position: absolute;
+		top: 81px;
+		right: 0;
+        left: 0;
+		z-index: 3000;
+		width: 100%;
+        height: 100vh;
+		background: $gray-outline;
+		// 
+        
+		flex-direction: column;
+        justify-content: start;
+		&__item {
+             text-align: center;
+            
+			padding: 30px;
+            border-bottom: 1px solid #000;
+		}
+        
+	}
+	.menu__btn {
+		display: block;
+	}
+ .menu__item  + .menu__item  {
+	margin-left: 0;
+}
+}

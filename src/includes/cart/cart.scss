@@ -1,0 +1,48 @@
+.cart {
+	width: 410px;
+	&__title {
+		@extend %Roboto700;
+		font-size: 18px;
+	}
+	&__item {
+		padding: 40px;
+	}
+}
+
+.promocode {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+		&-input {
+			width: 100%;
+		}
+		&-button {
+			margin-left: 10px;
+			&--btn {
+				border: none;
+			}
+		}
+	}
+}
+
+.cost {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		line-height: 34px;
+		font-size: 18px;
+	}
+	&__total {
+		@extend %Roboto700;
+	}
+}
+
+.cart__item--wrap:not(:last-child) {
+	border-bottom: 1px solid $gray-outline;
+}
+.cost__title {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}

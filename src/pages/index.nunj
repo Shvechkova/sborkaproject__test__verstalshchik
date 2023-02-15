@@ -1,0 +1,65 @@
+{% extends "../templates/base.nunj" %}
+
+{% from "../components/button/button.nunj" import button %}
+{% from "../components/button__switch/button__switch.nunj" import a %}
+{% from "../components/icon/icon.nunj" import icon %}
+
+
+{% block content %}
+
+	{% include '../includes/header/header.nunj' %}
+
+ 
+ <main>
+<div class="content">
+<div class="content__wrapper">
+
+	<div class="content__main">
+		
+{% include '../includes/track_line/track_line.nunj' %}
+{% include '../includes/billing/billing.nunj' %}
+
+
+
+</div>
+
+	<div class="content__cart">
+
+
+
+
+
+{% include '../includes/cart/cart.nunj' %}
+
+
+</div>
+</div>
+</div>
+</main>  
+
+
+{% endblock %}
+
+		 
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+

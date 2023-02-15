@@ -1,0 +1,9 @@
+{% macro button(props) %}
+<button class="button{% if props.className %} {{ props.className }}{% endif %}"
+form="{% if props.form %}{{ props.form }}{% endif %}">
+
+	{{ props.children }}
+	{% if props.chevronRight %}
+	{% endif %}
+</button>
+{% endmacro %}

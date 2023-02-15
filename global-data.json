@@ -1,0 +1,65 @@
+{
+	"menuItems": [
+		{
+			"name": "Women’s",
+			"path": "#"
+		},
+		{
+			"name": "Men’s",
+			"path": "#"
+		},
+			{
+			"name": "Home",
+			"path": "#"
+		},
+			{
+			"name": "Travel",
+			"path": "#"
+		},
+			{
+			"name": "Beauty",
+			"path": "#"
+		},
+			{
+			"name": "Sale",
+			"path": "#"
+		}
+	],
+	"someData": [
+		{
+			"title": "Item 1",
+			"text": "Desc 1"
+		},
+		{
+			"title": "Item 2",
+			"text": "Desc 2"
+		}
+	],
+"product": [
+		{
+			"title": "Item 1",
+			"name": "Amet minim mollit non deserunt ullamco est sit",
+			"price": 525,
+			"quantity": 1,
+			"picture": "../assets/images/product1.png"
+		},
+		{
+			"title": "Item 2",
+			"name": "Amet minim mollit non",
+			"price": 5245,
+			"quantity": 1,
+			"picture": "../assets/images/product2.png"
+		}
+		
+	],
+"products": [
+		{
+		
+			"price": "525"
+			
+		}
+		
+	]
+
+
+}

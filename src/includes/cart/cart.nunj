@@ -1,0 +1,57 @@
+{% from "../../components/basket/basket.nunj" import basket %}
+
+<div class="cart">
+	<form action="" name="basket" id="basket"></form>
+	<div class="cart__item--wrap">
+		<div class="cart__item basket">
+			<h3 class="basket__title cart__title">My basket</h3>
+			<div class="">
+				{{ basket() }}
+			</div>
+		</div>
+	</div>
+	<div class="cart__item--wrap">
+		<div class="cart__item promocode">
+			<h3 class="promocode__title cart__title">Promo code</h3>
+
+			<div class="promocode__item">
+				<input
+					class="promocode__item-input inputs"
+					type="text"
+					id="basket"
+					placeholder="Placeholder Text"
+				/>
+				<div class="promocode__item-button">
+					{{
+						button({
+							className: 'promocode__item-button--btn',
+							form: 'basket',
+							children: 'Apply'
+						})
+					}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cart__item--wrap">
+		<div class="cart__item cost">
+			<div class="cost__subtotal cost__item">
+				<div class="cost__title">Subtotal <span>$</span></div>
+				<div class="cost__value cost__value__subtotal"></div>
+			</div>
+
+			<div class="cost__tax cost__item">
+				<div class="cost__title">Tax</div>
+				<div class="cost__value">$100</div>
+			</div>
+			<div class="cost__shipping cost__item">
+				<div class="cost__title">Shipping</div>
+				<div class="cost__value">$150</div>
+			</div>
+			<div class="cost__total cost__item">
+				<div class="cost__title">Total <span>$</span></div>
+				<div class="cost__value cost__value__total"></div>
+			</div>
+		</div>
+	</div>
+</div>

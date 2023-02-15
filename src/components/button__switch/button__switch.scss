@@ -1,0 +1,20 @@
+
+.button__switch {
+	display: flex;
+	border: 1px solid $gray-outline;
+border-radius: 3px;
+padding: 8px 30px ; 
+text-align: center;
+align-items: center;
+
+font-size: 14px;
+line-height: 24px;
+font-weight: 400;
+transition: .2s;
+&:hover {
+		background-color: $ligt-gray;
+		
+		
+	}
+
+}

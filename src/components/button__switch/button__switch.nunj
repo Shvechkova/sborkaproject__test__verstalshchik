@@ -1,0 +1,9 @@
+{% macro a(props) %}
+<a class="button__switch{% if props.className %} {{ props.className }}{% endif %}"
+href="{% if props.href %}{{ props.href }}{% endif %}"
+>
+
+	{{ props.children }}
+	
+</a>
+{% endmacro %}

@@ -1,0 +1,54 @@
+.header {
+	border-bottom: 1px solid rgba(207, 207, 207, 1);
+	
+	& .container{
+		padding:   0 30px 0 30px;
+		max-width: 100% ;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 81px;
+	
+	}
+	& .icon {
+width: 89px;
+height: 32px;
+	}
+	& button{
+		border: none;
+		background-color:transparent;
+		cursor: pointer;
+	}
+	
+	
+
+}
+.menu__item  + .menu__item  {
+	margin-left: 30px;
+}
+
+.icon__serch,
+.icon__cart{
+	width: 24px;
+	height: 24px;
+	
+}
+.header__buttons-cart{
+	position: relative;
+	margin-left: 26px;
+	& span {
+		
+	}
+}
+
+.menu__btn{
+	display: none;
+	 margin-left: 32px;
+}
+.header__buttons{
+	display: flex;
+}
+.menu{
+	display: flex;
+	
+}

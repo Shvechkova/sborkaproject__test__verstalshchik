@@ -1,0 +1,83 @@
+.card {
+	margin-top: 30px;
+	position: relative;
+	&__img {
+		margin-right: 12px;
+	}
+}
+
+.card__item {
+	&-name {
+		margin-bottom: 15px;
+	}
+	&-count {
+		display: flex;
+		& div {
+			padding-right: 24px;
+		}
+	}
+}
+
+.card__wrapper {
+	display: flex;
+	position: relative;
+	& + .card__wrapper {
+		margin-top: 40px;
+	}
+}
+
+.button__delite {
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 18px;
+	height: 18px;
+	background-color: transparent;
+}
+.button__delite:before,
+.button__delite:after {
+	content: '';
+	position: absolute;
+	width: 18px;
+	height: 1px;
+	background: gray;
+}
+.button__delite:before {
+	transform: rotate(45deg);
+}
+.button__delite:after {
+	transform: rotate(-45deg);
+}
+
+.card__item-count--btn {
+	width: 18px;
+	height: 18px;
+
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.card__item-count--wrap {
+	display: flex;
+	justify-content: space-between;
+	width: 82px;
+}
+.card__item-count--quantity {
+	font-family: 'Roboto';
+
+	font-weight: 400;
+	height: 100%;
+	width: 100%;
+	margin-left: 5px;
+	text-align: center;
+	border: none;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+}

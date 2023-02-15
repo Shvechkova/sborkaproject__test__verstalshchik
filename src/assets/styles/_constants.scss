@@ -1,0 +1,15 @@
+$default-transition-duration: 0.4s;
+$default-transition-function: ease-out;
+$blue:rgba(51, 102, 255, 1);
+$ligt-gray:#D5D5D5;
+$gray-outline:#CFCFCF;
+$gray-middle:#8C8C8C;
+
+%Roboto700{
+   font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    
+}

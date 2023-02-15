@@ -1,0 +1,55 @@
+{% from "../../components/menu/menu.nunj" import menu %}
+
+<div class="header">
+	<div class="container">
+
+		<a href="#">{{ icon({
+iconName: 'logo-spshop',
+
+				className: 'icon',
+				attributes: 'viewBox="0 0 20 20" style="width: 89px; height: 32px; "'
+
+			}) }}
+		</a>
+
+
+		{{ menu() }}
+
+
+		<div class="header__buttons">
+			<button>{{ icon({
+iconName: 'serch',
+
+className: 'icon__serch',
+
+				attributes: 'viewBox="0 0 20 20" style="width: 24px; height: 24px; "'
+
+			}) }}
+			</button>
+
+			<button
+				class="header__buttons-cart">
+
+				{{ icon({
+iconName: 'cart',
+
+className: 'icon__cart',
+
+				attributes: 'viewBox="0 0 20 20" style="width: 24px; height: 24px; "'
+
+			}) }}
+			</button>
+			<button class="menu__btn">
+				<svg class="menu__btn__pic" width="24" height="22" viewbox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+					<rect width="29" height="2" fill="black"/>
+					<rect y="10" width="29" height="2" fill="black"/>
+					<rect x="0.5" y="20.5" width="28" height="1" fill="black" stroke="black"/>
+				</svg>
+
+			</button>
+
+
+		</div>
+	</div>
+</div>
